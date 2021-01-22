@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HBumzuege | Wir planen Ihren Umzug.</title>
+        <title>HB-umzuege | Wir planen Ihren Umzug.</title>
         <meta charset="utf-8">
         <meta lang="de-DE">
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
@@ -103,13 +104,15 @@
             <form>
                 <input type="text" placeholder="Name" name="kontakt">
                 <input type="text" placeholder="Email (Pflichtfeld)" name="kontakt" required>
-                <input type="textbox" placeholder="Nachricht (Pflichtfeld" name="kontakt" required>
-                <input type="checkbox" name="kontakt" id="daten" required>
-                <label for="daten">Ich erkläre mich mit den Datenschutzbestimmungen einverstanden</label>
+                <textarea name="kontakt" rows="5" placeholder="Nachricht (Pflichtfeld)" required></textarea>
+                <div>
+                    <input type="checkbox" name="kontakt" id="daten" required>
+                    <label for="daten">Ich erkläre mich mit den Datenschutzbestimmungen einverstanden</label>
+                </div>
                 <button type="submit" name="kontakt">Absenden</button>
             </form>
         </article>
-        <article id="Impressum">
+        <article id="impressum">
             <h1>HB-UMZUege</h1>
             <h2>Inhaberin Margarita Tihobaev</h2>
             <hr>
@@ -117,7 +120,7 @@
             <p>28777 Bremen</p>
             <p>Telefon: 0176 55 21 31 38</p>
             <p>Fax: 0421 16 69 47 75</p>
-            <p>Email: hbumzuege@gmail.com</p>
+            <p>Email: <a href="mailto:hbumzuege@gmail.com" id="email">hbumzuege@gmail.com</a></p>
             <p>www.hbumzuege.de</p>
         </article>
         <footer>
