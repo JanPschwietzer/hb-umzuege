@@ -7,13 +7,9 @@
         color: black;
         text-decoration: none;
     }
-
-    .center{
-        padding: 1% 5% 3% 5%;
-    }
     body{
         display: block;
-        margin-left: auto;
+        margin-left: 2.5%;
         margin-right: auto;
     }
 
@@ -49,8 +45,10 @@
         background-repeat: no-repeat;
         background-size: 95vw auto;
         font-size: large;
-        width: 90vw;
-        padding: 10px 0px 50px 0px;
+        width: 95vw;
+        padding-top: 10px;
+        margin-right: 0px;
+        padding-right: 0px;
     }
     main h1{
         width: 90vw;
@@ -72,7 +70,7 @@
 
     #dienstleistungen{
         padding: 10px 0px 50px 0px;
-        width: 90vw;
+        width: 95vw;
     }
     #dienstleistungen h1{
         font-size: 32px;
@@ -109,7 +107,7 @@
     /* ARTICLE KONTAKT */
 
     #kontakt{
-        width: 100vw;
+        width: 95vw;
         padding: 10px 0px 50px 0px;
     }
     #kontakt h1{
@@ -150,9 +148,9 @@
 
     /* ARTICLE IMPRESSUM */
     #impressum{
-        width: 90vw;
+        width: 80vw;
         background-image: url("images/background_introtext.jpg");
-        background-size: 80vw auto;
+        background-size: 95vw auto;
         background-repeat: no-repeat;
         color: black;
         padding: 10px 20px 20px 20px;
@@ -191,7 +189,7 @@
         justify-items: center;
         align-items: end;
         font-size: 10px;
-        padding: 0px 10px 50px 0px;
+        padding: 0px 10px 0px 0px;
     }
     footer img{
         display: block;
