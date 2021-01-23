@@ -74,6 +74,9 @@
     #dienstleistungen h1{
         font-size: 32px;
     }
+    #dienstleistungen p{
+        padding-right: 5%;
+    }
     #grid-figure{
         display: grid;
         grid-template-rows: repeat(6, 1fr);
@@ -86,6 +89,7 @@
         border-style: solid;
         border-width: 1px;
         margin-left: 0px;
+        margin-right: 5%;
     }
     figure img{
         width: 100%;
