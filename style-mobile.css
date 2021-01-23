@@ -121,14 +121,14 @@
         align-items: center;
     }
     input[type="text"]{
-        width: 95%;
+        width: 91%;
         height: 30px;
         border-radius: 5px;
         border-width: 1px;
         border-color: lightgrey;
     }
     textarea{
-        width: 95%;
+        width: 91%;
         height: 75px;
         grid-row: span 2;
         border-radius: 5px;
@@ -137,14 +137,15 @@
     }
     button{
         grid-row: span 2;
-        width: 95%;
+        width: 91%;
         height: 75px;
         align-self: end;
-        border-radius: 1%;
+        border-radius: 3%;
         border-width: 1px;
         border-color: lightgrey;
     }
     #checkbox{
+        width: 91%;
         display: grid;
         grid-template-columns: 1fr 9fr;
         align-items: center;
