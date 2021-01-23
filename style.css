@@ -47,6 +47,9 @@ header nav{
 /* MAIN */
 
 main{
+    background-image: url("images/background_introtext.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
     display: grid;
     grid-template: 80px 70px 1fr / 100%;
 }
@@ -63,7 +66,6 @@ main ul{
 /* ARTICLE DIENSTLEISTUNGEN */
 
 #dienstleistungen{
-    padding-top: 50px;
     padding-bottom: 50px;
     display: grid;
     grid-template: 80px 80px 1fr / 1fr;
