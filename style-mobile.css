@@ -1,0 +1,207 @@
+@media all and (max-width: 800px){
+    html{
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .center{
+        padding: 1% 5% 3% 5%;
+    }
+
+
+    /* HEADER */
+
+    header{
+        width: 98vw;
+        background-color: lightgray;
+    }
+    header img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 90vw;
+        padding: 10px 0px 50px 0px;
+    }
+    header nav{
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        font-size: 10px;
+        padding: 0px 10px 50px 0px;
+    }
+
+
+    /* MAIN */
+
+    main{
+        background-image: url("images/background_introtext_mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: 98vw auto;
+        font-size: large;
+        width: 90vw;
+        padding: 10px 0px 50px 0px;
+    }
+    main h1{
+        width: 90vw;
+    }
+    main p{
+        width: 87vw;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+    main ul{
+        width: 80vw;
+        margin-bottom: 50px;
+        padding-left: 10px;
+        font-size: small;
+    }
+
+
+    /* ARTICLE DIENSTLEISTUNGEN */
+
+    #dienstleistungen{
+        padding: 10px 0px 50px 0px;
+        width: 90vw;
+    }
+    #dienstleistungen h1{
+        font-size: 32px;
+    }
+    #grid-figure{
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    figure{
+        padding: 25px;
+        border-radius: 5%;
+        background-image: url("images/background_introtext.jpg");
+        background-size: 400%;
+        border-style: solid;
+        border-width: 1px;
+    }
+    figure img{
+        width: 100%;
+        max-width: 500px;
+        border-radius: 2%;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figcaption{
+        padding-top: 10px;
+        text-align: justify;
+    }
+
+
+    /* ARTICLE KONTAKT */
+
+    #kontakt{
+        width: 100vw;
+        padding: 10px 0px 50px 0px;
+    }
+    #kontakt h1{
+        font-size: 28px;
+    }
+    form{
+        display: grid;
+        grid-template-rows: repeat(6, 50px);
+        align-items: center;
+    }
+    input[type="text"]{
+        width: 95%;
+        height: 30px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: lightgrey;
+    }
+    textarea{
+        width: 95%;
+        height: 75px;
+        grid-row: span 2;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: lightgrey;
+    }
+    button{
+        grid-row: span 2;
+        width: 95%;
+        height: 75px;
+        align-self: end;
+    }
+    #checkbox{
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        align-items: center;
+    }
+
+
+    /* ARTICLE IMPRESSUM */
+    #impressum{
+        width: 90vw;
+        background-image: url("images/background_introtext.jpg");
+        background-size: 80vw auto;
+        background-repeat: no-repeat;
+        color: black;
+        padding: 10px 20px 20px 20px;
+        border-radius: 5%;
+    }
+    #impressum h1{
+        font-size: 30px;
+    }
+    #impressum h2{
+        font-size: medium;
+    }
+    #email{
+        color: black;
+        text-decoration: none;
+    }
+    #email:hover{
+        text-decoration: underline;
+    }
+
+
+    /* FOOTER */
+    footer{
+        width: 98vw;
+        margin-top: 50px;
+        padding: 10px 0px 50px 0px;
+        background: lightgray;
+        margin-bottom: 0px;
+    }
+    footer h1{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    footer nav{
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: end;
+        font-size: 10px;
+        padding: 0px 10px 50px 0px;
+    }
+    footer img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 80vw;
+        padding: 10px 0px 50px 0px;
+    }
+
+
+    /* ARROW UP */
+
+    #arrow img{
+        width: 0px;
+        height: 0px;
+    }
+}
