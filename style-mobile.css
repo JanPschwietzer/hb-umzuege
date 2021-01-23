@@ -115,6 +115,7 @@
     }
     form{
         display: grid;
+        grid-gap: 10px;
         grid-template-rows: repeat(6, 50px);
         align-items: center;
     }
@@ -138,6 +139,9 @@
         width: 95%;
         height: 75px;
         align-self: end;
+        border-radius: 1%;
+        border-width: 1px;
+        border-color: lightgrey;
     }
     #checkbox{
         display: grid;
