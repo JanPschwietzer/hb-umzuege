@@ -41,14 +41,13 @@
     /* MAIN */
 
     main{
+        padding-left: 2.5%;
         background-image: url("images/background_introtext_mobile.jpg");
         background-repeat: no-repeat;
         background-size: 95vw auto;
         font-size: large;
         width: 95vw;
         padding-top: 10px;
-        margin-right: 0px;
-        padding-right: 0px;
     }
     main h1{
         width: 90vw;
@@ -69,7 +68,7 @@
     /* ARTICLE DIENSTLEISTUNGEN */
 
     #dienstleistungen{
-        padding: 10px 0px 50px 0px;
+        padding: 10px 0px 50px 2.5px;
         width: 95vw;
     }
     #dienstleistungen h1{
@@ -108,7 +107,7 @@
 
     #kontakt{
         width: 95vw;
-        padding: 10px 0px 50px 0px;
+        padding: 10px 0px 50px 2.5px;
     }
     #kontakt h1{
         font-size: 28px;
