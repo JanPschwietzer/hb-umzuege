@@ -7,7 +7,7 @@ ARROW UP:
 
 html{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("images/background.png");
+    background-image: url("images/background.jpg");
 }
 a{
     color: black;
@@ -19,9 +19,9 @@ a:hover{
 
 .center{
     display: block;
-    padding: 1% 5% 3% 5%;
     margin-left: auto;
     margin-right: auto;
+    padding: 1% 5% 3% 5%;
     min-width: 60%;
     max-width: 900px;
     background-color: white;
@@ -89,8 +89,8 @@ main ul{
 }
 #grid-figure{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 500px);
-    grid-template-rows: repeat(auto-fit, 500px);
+    grid-template-columns: repeat(auto-fit, minmax(25%, 50%));
+    justify-items: center;
 }
 figure{
     padding: 25px;
@@ -106,7 +106,14 @@ figure img{
     border-radius: 2%;
     border-style: solid;
     border-width: 1px;
-    border-color: grey;
+    border-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figcaption{
+    padding-top: 10px;
+    text-align: justify;
 }
 
 
