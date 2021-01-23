@@ -85,6 +85,7 @@
         background-size: 400%;
         border-style: solid;
         border-width: 1px;
+        margin-left: 0px;
     }
     figure img{
         width: 100%;
