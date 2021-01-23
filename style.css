@@ -25,15 +25,19 @@ a:hover{
 
 header{
     display: grid;
-    grid-template-columns: 1fr 1fr 50px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px;
     align-items: center;
     background: lightgray;
-    padding: 0px 25px 0px 25px;
+    padding: 0px 50px 0px 25px;
 }
 header img{
     justify-self: start;
     height: 50%;
+}
+header img:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 header nav{
     justify-self: end;
@@ -45,6 +49,11 @@ header nav{
 main{
     display: grid;
     grid-template: 80px 70px 1fr / 100%;
+}
+main p{
+    width: 75%;
+    padding-bottom: 20px;
+    text-align: justify;
 }
 main ul{
     justify-self: start;
@@ -69,10 +78,9 @@ main ul{
     grid-row: 2;
 }
 #grid-figure{
-    width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 500px);
-        grid-template-rows: repeat(auto-fill, 500px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-rows: repeat(auto-fill, 500px);
 }
 figure{
     padding: 25px;
@@ -98,6 +106,9 @@ figure img{
     grid-template: 80px 1fr / 1fr;
     justify-items: center;
     padding-bottom: 50px;
+}
+#kontakt h1{
+    font-size: 28px;
 }
 form{
     display: grid;
