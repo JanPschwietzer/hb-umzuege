@@ -141,7 +141,7 @@
     }
     button{
         grid-row: span 2;
-        width: 91%;
+        width: 95%;
         height: 75px;
         align-self: end;
         border-radius: 3%;
