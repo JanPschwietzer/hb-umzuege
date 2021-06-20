@@ -1,4 +1,4 @@
-@media all and (min-width: 1250px){
+@media all and (min-width: 801px){
     html{
         font-family: Arial, Helvetica, sans-serif;
         background-image: url("images/background.jpg");
@@ -21,6 +21,9 @@
         background-color: white;
     }
 
+    .no-bg {
+        background-color: rgba(0, 0, 0, 0.0);
+    }
 
     /* HEADER */
 
@@ -51,12 +54,10 @@
     /* MAIN */
 
     main{
+        position: fixed;
+        width: 99%;
+        min-height: 100%;
         background-image: url("images/background_introtext.jpg");
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        height: 90vh;
-        display: grid;
-        grid-template: 80px 70px 1fr / 100%;
     }
     main p{
         width: 75%;
@@ -74,8 +75,11 @@
 
     #dienstleistungen{
         padding-bottom: 50px;
-        display: grid;
-        grid-template: 80px 80px 1fr / 1fr;
+        
+    }
+    article hr {
+        width: 100px;
+        background-color: gray;
     }
     #dienstleistungen h1{
         font-size: 32px;
@@ -88,44 +92,42 @@
     }
     #grid-figure{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25%, 50%));
+        grid-template-columns: repeat(auto-fit, minmax(15%, 33%));
         justify-items: center;
     }
     figure{
-        padding: 25px;
+        padding: 10px;
         border-radius: 5%;
-        background-image: url("images/background_figures.jpg");
-        background-size: 400%;
-        border-style: solid;
-        border-width: 1px;
     }
     figure img{
-        width: 100%;
-        max-width: 500px;
-        border-radius: 2%;
-        border-style: solid;
-        border-width: 1px;
-        border-color: black;
+        max-width: 100%;
+        height: 100px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
     figcaption{
-        padding-top: 10px;
+        padding: 15px;
         text-align: justify;
+    }
+
+    #contact-impress {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 
     /* ARTICLE KONTAKT */
 
     #kontakt{
+        padding-top: 20px;
         display: grid;
         grid-template: 80px 1fr / 1fr;
-        justify-items: center;
+        justify-items: left;
         padding-bottom: 50px;
     }
     #kontakt h1{
-        font-size: 28px;
+        font-size: 24px;
     }
     form{
         display: grid;
@@ -148,6 +150,7 @@
         border-radius: 5px;
         border-width: 1px;
         border-color: lightgrey;
+        resize: none;
     }
     button{
         width: 100%;
@@ -157,23 +160,27 @@
         align-self: end;
     }
 
-
     /* ARTICLE IMPRESSUM */
     #impressum{
         background-image: url("images/background_impressum.jpg");
         background-size: 150%;
         color: black;
-        margin: 50px 15% 50px auto;
         padding: 20px 50px 20px 50px;
-        width: 500px;
+        width: 90%;
         border-radius: 5%;
+        text-align: left;
     }
     #impressum h1{
-        font-size: 30px;
+        font-size: 24px;
     }
     #impressum h2{
         font-size: medium;
     }
+
+    .hr-full {
+        width: 100%;
+    }
+
     #email{
         color: black;
         text-decoration: none;
@@ -199,6 +206,7 @@
         justify-self: end;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
         justify-items: center;
     }
     footer img{
@@ -217,228 +225,5 @@
         width: 100px;
         -webkit-filter: invert(1);
         filter: invert(1);
-    }
-}
-
-@media all and (min-width: 801px) and (max-width: 1249px){
-    html{
-        font-family: Arial, Helvetica, sans-serif;
-        background-image: url("images/background.jpg");
-    }
-    a{
-        color: black;
-        text-decoration: none;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
-
-    .center{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1% 5% 3% 5%;
-        min-width: 60%;
-        max-width: 900px;
-        background-color: white;
-    }
-
-
-    /* HEADER */
-
-    header{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px;
-        align-items: center;
-        background: lightgray;
-        padding: 0px 50px 0px 25px;
-    }
-    header img{
-        justify-self: start;
-        height: 50%;
-    }
-    header img:hover{
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-    }
-    header nav{
-        justify-self: end;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-    }
-
-
-    /* MAIN */
-
-    main{
-        background-image: url("images/background_introtext.jpg");
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        height: 90vh;
-        display: grid;
-        grid-template: 80px 70px 1fr / 100%;
-    }
-    main p{
-        width: 75%;
-        padding-bottom: 20px;
-        text-align: justify;
-    }
-    main ul{
-        justify-self: start;
-        line-height: 24px;
-        font-size: 18px;
-    }
-
-
-    /* ARTICLE DIENSTLEISTUNGEN */
-
-    #dienstleistungen{
-        padding-bottom: 50px;
-        display: grid;
-        grid-template: 80px 80px 1fr / 1fr;
-    }
-    #dienstleistungen h1{
-        font-size: 32px;
-        grid-column: span 2;
-        grid-row: 1;
-    }
-    #dienstleistungen p{
-        grid-column: span 2;
-        grid-row: 2;
-    }
-    #grid-figure{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25%, 50%));
-        justify-items: center;
-    }
-    figure{
-        padding: 25px;
-        border-radius: 5%;
-        background-image: url("images/background_figures.jpg");
-        background-size: 400%;
-        border-style: solid;
-        border-width: 1px;
-    }
-    figure img{
-        width: 100%;
-        max-width: 500px;
-        border-radius: 2%;
-        border-style: solid;
-        border-width: 1px;
-        border-color: black;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    figcaption{
-        padding-top: 10px;
-        text-align: justify;
-    }
-
-
-    /* ARTICLE KONTAKT */
-
-    #kontakt{
-        display: grid;
-        grid-template: 80px 1fr / 1fr;
-        justify-items: center;
-        padding-bottom: 50px;
-    }
-    #kontakt h1{
-        font-size: 28px;
-    }
-    form{
-        display: grid;
-        grid-template-rows: repeat(6, 50px);
-        align-items: center;
-    }
-    input[type="text"], input[type="email"]{
-        width: 100%;
-        max-width: 500px;
-        height: 30px;
-        border-radius: 5px;
-        border-width: 1px;
-        border-color: lightgrey;
-    }
-    textarea{
-        width: 100%;
-        max-width: 500px;
-        height: 75px;
-        grid-row: span 2;
-        border-radius: 5px;
-        border-width: 1px;
-        border-color: lightgrey;
-    }
-    button{
-        width: 100%;
-        height: 25px;
-        max-width: 500px;
-        height: 80%;
-        align-self: end;
-    }
-
-
-    /* ARTICLE IMPRESSUM */
-    #impressum{
-        background-image: url("images/background_impressum.jpg");
-        background-size: 150%;
-        color: black;
-        margin: 50px 15% 50px auto;
-        padding: 20px 50px 20px 50px;
-        width: 500px;
-        border-radius: 5%;
-    }
-    #impressum h1{
-        font-size: 30px;
-    }
-    #impressum h2{
-        font-size: medium;
-    }
-    #email{
-        color: black;
-        text-decoration: none;
-    }
-    #email:hover{
-        text-decoration: underline;
-    }
-
-
-    /* FOOTER */
-    footer{
-        padding-left: 2.5%;
-        padding-right: 2.5%;
-        background: lightgray;
-        display: grid;
-        grid-template: 100px / 1fr 1fr 1fr;
-        align-items: center;
-    }
-    footer h1{
-        font-size: 24px;
-    }
-    footer nav{
-        justify-self: end;
-        display: grid;
-        grid-template: 1fr 1fr / 1fr 1fr;
-        grid-gap: 10px;
-        justify-items: center;
-    }
-    footer img{
-        justify-self: center;
-        height: 33%;
-    }
-
-
-    /* ARROW UP */
-    #arrow{
-        position: fixed;
-        bottom: 100px;
-        right: 30px;
-    }
-    #arrow img{
-        width: 100px;
-        -webkit-filter: invert(0);
-        filter: invert(0);
     }
 }

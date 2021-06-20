@@ -1,0 +1,1 @@
+figure bei hover größer und bilder austauschen lassen bei mouseover

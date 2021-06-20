@@ -13,100 +13,98 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style-pc.css" rel="stylesheet" type="text/css">
         <link href="style-mobile.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <header id="header-nav">
             <img src="images/logo.png" alt="HB-UMZUege Logo" id="#logo">
             <nav>
                 <a href="index.html">Home</a>
-                <a href="#dienstleistungen">Dienstleistungen</a>
+                <a onclick="fadeToggle(dienstleistungen)">Dienstleistungen</a>
                 <a href="#kontakt">Kontakt</a>
                 <a href="#impressum">Impressum</a>
             </nav>
         </header>
-        <main id="home" class="center">
-            <h1>Wir planen Ihren Umzug.</h1>
-            <p>HB-UMZUege ist ein Familienunternehmen, welches seit 2015 die Maßstäbe der Umzugsunternehmen in der Hansestadt <strong>Bremen und auch umzu</strong> neu definiert. Wir achten sehr sorgfältig auf Kundenzufriedenheit und organisierte Abläufe! Es wartet auf Sie ein professionelles und agiles Team welches sich über Jahre aufeinander abgestimmt und eingespielt hat.</p>
-            <p>Mit uns ziehen Sie stressfrei um, denn wir organisieren Ihren Umzug von dem Transport der Möbel, der Entsorgung alter Möbel und natürlich auch der Durchführung des Umzuges bis zum Aufbau ihrer Möbel im neuen geliebten Heim. Sie werden noch nie so angenehm Ihren Lebensmittelpunkt verschoben haben. Wir sorgen immer für <strong>100 prozentige Stressfreiheit und Kundenzufriedenheit.</strong> Damit Sie sich im neuen Heim wohlfühlen. <i>Versprochen.</i></p>
-            <p id="extra-p">Haben Sie sich jetzt schon entschieden? Rufen Sie uns an unter <a href="tel:+4917655213138" style="text-decoration: underline">0176-55213138</a> oder nutzen Sie unser <a href="#kontakt" style="text-decoration: underline">Kontaktformular</a> auf dieser Webseite. Wir machen Ihnen innerhalb kürzester Zeit ein unverbindliches Angebot.</p>
-            <ul>
-                <li>Zu unserem Service gehört unter anderem:</li>
-                <ul>
-                    <li>Besichtigung und Beratung vor Ort.</li>
-                    <li>Entsorgung und Entrümpelung.</li>
-                    <li>Umzug von und nach Bremen und umzu.</li>
-                    <li>Aufbau und Montage Ihrer Möbel und Geräte.</li>
-                    <li>Umzugskarton An- und Verkauf.</li>
-                    <li>Lagerung Ihrer Gegenstände in unserem Lager.</li>
-                </ul>
-            </ul>
+        <main id="home">
+            <div class="center no-bg">
+                <h1>Wir planen Ihren Umzug.</h1>
+                <p>HB-UMZUege ist ein Familienunternehmen, welches seit 2015 die Maßstäbe der Umzugsunternehmen in der Hansestadt <strong>Bremen und auch umzu</strong> neu definiert. Wir achten sehr sorgfältig auf Kundenzufriedenheit und organisierte Abläufe! Es wartet auf Sie ein professionelles und agiles Team welches sich über Jahre aufeinander abgestimmt und eingespielt hat.</p>
+                <p>Mit uns ziehen Sie stressfrei um, denn wir organisieren Ihren Umzug von dem Transport der Möbel, der Entsorgung alter Möbel und natürlich auch der Durchführung des Umzuges bis zum Aufbau ihrer Möbel im neuen geliebten Heim. Sie werden noch nie so angenehm Ihren Lebensmittelpunkt verschoben haben. Wir sorgen immer für <strong>100 prozentige Stressfreiheit und Kundenzufriedenheit.</strong> Damit Sie sich im neuen Heim wohlfühlen. <i>Versprochen.</i></p>
+                <p id="extra-p">Haben Sie sich jetzt schon entschieden? Rufen Sie uns an unter <a href="tel:+4917655213138" style="text-decoration: underline">0176-55213138</a> oder nutzen Sie unser <a href="#kontakt" style="text-decoration: underline">Kontaktformular</a> auf dieser Webseite. Wir machen Ihnen innerhalb kürzester Zeit ein unverbindliches Angebot.</p>
+                <p>Klicken Sie um auf die Webseite zu gelangen.</p>
+                <img src="images/klick.png">
+            </div>
         </main>
         <article id="dienstleistungen" class="center">
             <h1>Dienstleistungen</h1>
             <p>Wir bieten Ihnen verschiedenste Dienstleistungen an. Dazu gehören zum Beispiel:</p>
+            <hr>
             <div id="grid-figure">
-                <figure>
-                    <img src="images/bild1.jpg" alt="Die Ladefläche unseres Lastkraftwagens">
+                <figure id="figure1" class="dl1">
+                    <img src="svg/ort.svg">
                     <figcaption>
                         <p>Wir bieten ihnen Umzüge von Bremen und umzu nach ganz Deutschland. Für Familien, Einzelhaushalte, Senioren und auch Firmen.</p>
                     </figcaption>
                 </figure>
-                <figure>
-                    <img src="images/bild2.jpg" alt="Ein Container mit Abfall.">
+                <figure id="figure2" class="dl1">
+                    <img src="svg/container.svg" alt="Ein Container mit Abfall.">
                     <figcaption>
                         <p>Lassen Sie Ihre Möbel von uns entsorgen, Ihr Heim entrümpeln und sorgen Sie für Platz. Wir übernehmen die Entsorgung.</p>
                     </figcaption>
                 </figure>
-                <figure>
-                    <img src="images/bild4.jpg" alt="Ein geladener Transporter">
-                    <figcaption>
-                        <p>Ihre Möbel sind Ihnen genau so wichtig wie uns. Daher ist es uns wichtig, dass Sie Ihre Möbel frustfrei in Ihr neues Heim bekommen.</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/bild5.jpg" alt="Ein Klavier">
+                <figure id="figure4" class="dl1">
+                    <img src="svg/klavier.svg" alt="Ein Klavier">
                     <figcaption>
                         <p>Machen Sie nicht Ihren Rücken kaputt, wir sorgen auch für den Transport von sehr schweren Möbeln, wie Küchengeräten oder Klavieren.</p>
                     </figcaption>
                 </figure>
-                <figure>
-                    <img src="images/bild6.jpg" alt="Ein beladener Transporter.">
+                <figure id="figure3" class="dl2">
+                    <img src="svg/happy.svg" alt="Ein geladener Transporter">
+                    <figcaption>
+                        <p>Ihre Möbel sind Ihnen genau so wichtig wie uns. Daher ist es uns wichtig, dass Sie Ihre Möbel frustfrei in Ihr neues Heim bekommen.</p>
+                    </figcaption>
+                </figure>
+                <figure id="figure5" class="dl2">
+                    <img src="svg/transporter.svg" alt="Ein beladener Transporter.">
                     <figcaption>
                         <p>"Wie bekomme ich den Umzugswagen zu mir ?" Überlassen Sie die Frage uns, wir sorgen für Halteverbotszonen, so dass der Umzug ohne komplikationen verlaufen kann.</p>
                     </figcaption>
                 </figure>
-                <figure>
-                    <img src="images/bild7.jpg" alt="Ein möbellierter Raum">
+                <figure id="figure6" class="dl2">
+                    <img src="svg/schrank.svg" alt="Ein möbellierter Raum">
                     <figcaption>
                         <p>Natürlich lassen wir Sie nicht im Stich nach dem Transport. Alle Ihre Möbel werden nach Ihrem Wunsch fachmännisch aufgebaut und sind sofort einsatzbereit!</p>
                     </figcaption>
                 </figure>
             </div>
         </article>
-        <article id="kontakt" class="center">
-            <h1>Kontaktieren Sie uns unverbindlich!</h1>
-            <form action="https://formspree.io/f/meqpnvzl" method="POST" accept-charset="UTF-8" >
-                <input type="text" placeholder="Name" name="name">
-                <input type="email" placeholder="Email (Pflichtfeld)" name="email" required>
-                <textarea name="text" rows="5" placeholder="Nachricht (Pflichtfeld)" required></textarea>
-                <div id="checkbox">
-                    <input type="checkbox" id="daten" required>
-                    <label for="daten">Die übermittelten Daten dürfen gespeichert werden.</label>
-                </div>
-                <button type="submit" name="kontakt">Absenden</button>
-            </form>
-        </article>
-        <article id="impressum">
-            <h1>HB-UMZUege</h1>
-            <h2>Inhaberin Margarita Tihobaev</h2>
-            <hr>
-            <p>Lichtblickstraße 7</p>
-            <p>28777 Bremen</p>
-            <p>Telefon: <a href="tel:+4917655213138">0176 55 21 31 38</a></p>
-            <p>Fax: 0421 16 69 47 75</p>
-            <p>Email: <a href="mailto:hbumzuege@gmail.com" id="email">hbumzuege@gmail.com</a></p>
-            <p>www.hbumzuege.de</p>
-        </article>
+        <div id="contact-impress" class="center">
+            <article id="kontakt">
+                <h1>Kontaktieren Sie uns unverbindlich!</h1>
+                <form action="https://formspree.io/f/meqpnvzl" method="POST" accept-charset="UTF-8" >
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="email" placeholder="Email (Pflichtfeld)" name="email" required>
+                    <textarea name="text" rows="5" placeholder="Nachricht (Pflichtfeld)" required></textarea>
+                    <div id="checkbox">
+                        <input type="checkbox" id="daten" required>
+                        <label for="daten">Die übermittelten Daten dürfen gespeichert werden.</label>
+                    </div>
+                    <button type="submit" name="kontakt">Absenden</button>
+                </form>
+            </article>
+            <article id="impressum">
+                <h1>HB-UMZUege</h1>
+                <h2>Inhaberin Margarita Tihobaev</h2>
+                <hr class="hr-full">
+                <p>Lichtblickstraße 7</p>
+                <p>28777 Bremen</p>
+                <p>Telefon: <a href="tel:+4917655213138">0176 55 21 31 38</a></p>
+                <p>Fax: 0421 16 69 47 75</p>
+                <p>Email: <a href="mailto:hbumzuege@gmail.com" id="email">hbumzuege@gmail.com</a></p>
+                <p>www.hbumzuege.de</p>
+            </article>
+        </div>
         <footer>
             <h1>Wir planen Ihren Umzug:</h1>
             <img src="images/logo.png" alt="HB-UMZUege Logo" id="#logo">
@@ -117,8 +115,5 @@
                 <a href="#impressum">Impressum</a>
             </nav>
         </footer>
-        <div id="arrow">
-            <a href="#header-nav"><img src="images/arrow-up.png" title="Gehen Sie wieder zum Anfang der Seite." alt=""></a>
-        </div>
     </body>
 </html>
