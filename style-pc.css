@@ -114,6 +114,32 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    #dl-span {
+        grid-column: span 3;
+        margin-bottom: 30px;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 0.5fr 0.75fr 1fr 0.75fr 0.5fr;
+        grid-gap: 20px;
+    }
+    #dl-span img{
+        width: 100%;
+        cursor: pointer;
+    }
+    .instagram {
+        border-radius: 5%;
+    }
+    #center-image {
+        border-style: solid;
+        border-width: 1px;
+    }
+    #arrow {
+        cursor: pointer;
+        width: 50%;
+    }
+    .align-end {
+        align-self:flex-end
+    }
 
 
     /* ARTICLE KONTAKT */
@@ -211,18 +237,5 @@
     footer img{
         justify-self: center;
         height: 33%;
-    }
-
-
-    /* ARROW UP */
-    #arrow{
-        position: fixed;
-        bottom: 100px;
-        right: 30px;
-    }
-    #arrow img{
-        width: 100px;
-        -webkit-filter: invert(1);
-        filter: invert(1);
     }
 }
