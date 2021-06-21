@@ -7,25 +7,13 @@ if (window.innerWidth > 800) {
 
     $(document).ready(function() {
         $("body").click(function() {
-            $("main").fadeOut(1000);
-            $(document).unbind("scroll");
-            $("img").fadeIn(500);
-            $(".opacity1").css("opacity", "0.2");
-            $(".opacity2").css("opacity", "0.5");
+            jQueryStuff(1000);
         });
         $("body").keydown(function() {
-            $("main").fadeOut(1000);
-            $(document).unbind("scroll");
-            $("img").fadeIn(500);
-            $(".opacity1").css("opacity", "0.2");
-            $(".opacity2").css("opacity", "0.5");
+            jQueryStuff(1000);
         });
         $(document).scroll(function() {
-            $("main").fadeOut(500);
-            $(document).unbind("scroll");
-            $("img").fadeIn(500);
-            $(".opacity1").css("opacity", "0.2");
-            $(".opacity2").css("opacity", "0.5");
+            jQueryStuff(500);
         });
     })
 } else {
@@ -34,6 +22,16 @@ if (window.innerWidth > 800) {
         $("#desktopOnly").css("height", "5px");
     });
 }
+
+function jQueryStuff(time) {
+    $("main").fadeOut(time);
+    $(document).unbind("scroll");
+    $("img").fadeIn(500);
+    $(".opacity1").css("opacity", "0.2");
+    $(".opacity2").css("opacity", "0.5");
+}
+
+//
 
 let i = 2;
 
@@ -54,7 +52,7 @@ function bilderRight() {
         j++;
     }
     i++;
-    if (i >= 6) {
+    if (i > bilder.length) {
         i = 1;
     }
 }
