@@ -49,7 +49,7 @@
         width: 90vw;
     }
     main p{
-        width: 87vw;
+        width: 90vw;
         padding-bottom: 20px;
         text-align: justify;
     }
@@ -71,7 +71,7 @@
         font-size: 32px;
     }
     #dienstleistungen p{
-        padding-right: 5%;
+        padding-right: 2.5%;
     }
     #grid-figure{
         display: grid;
@@ -79,7 +79,7 @@
     }
     figure{
         margin-left: 0px;
-        margin-right: 5%;
+        margin-right: 2.5%;
     }
     figure img{
         width: 33%;
@@ -90,6 +90,33 @@
     figcaption{
         padding-top: 10px;
         text-align: justify;
+    }
+
+    #dl-span {
+        margin-bottom: 30px;
+        margin-right: 2.5%;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 0.12fr 0.25fr 1fr 0.25fr 0.12fr;
+        grid-gap: 20px;
+    }
+    #dl-span img{
+        width: 100%;
+        cursor: pointer;
+    }
+    .instagram {
+        border-radius: 5%;
+    }
+    #center-image {
+        border-style: solid;
+        border-width: 1px;
+    }
+    #arrow {
+        cursor: pointer;
+        width: 50%;
+    }
+    .align-end {
+        align-self:flex-end
     }
 
 
@@ -110,14 +137,14 @@
         align-items: center;
     }
     input[type="text"], input[type="email"]{
-        width: 91%;
+        width: 93%;
         height: 30px;
         border-radius: 5px;
         border-width: 1px;
         border-color: lightgrey;
     }
     textarea{
-        width: 91%;
+        width: 93%;
         height: 75px;
         grid-row: span 2;
         border-radius: 5px;
@@ -144,7 +171,7 @@
 
     /* ARTICLE IMPRESSUM */
     #impressum{
-        width: 80vw;
+        width: 85vw;
         background-image: url("images/background_impressum.jpg");
         background-size: 95vw auto;
         background-repeat: no-repeat;
