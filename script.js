@@ -14,6 +14,10 @@ if (window.innerWidth > 800) {
             $("main").fadeOut(1000);
             $(document).unbind("scroll");
         });
+        $(document).scroll(function() {
+            $("main").fadeOut(500);
+            $(document).unbind("scroll");
+        });
     })
 } else {
     $(document).ready(function() {
