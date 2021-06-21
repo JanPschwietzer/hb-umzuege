@@ -75,7 +75,7 @@
     }
     #grid-figure{
         display: grid;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr) 1.5fr repeat(3, 1fr);
     }
     figure{
         margin-left: 0px;
@@ -88,21 +88,19 @@
         margin-right: auto;
     }
     figcaption{
-        padding-top: 10px;
         text-align: justify;
     }
 
     #dl-span {
-        margin-bottom: 30px;
-        margin-right: 2.5%;
+        margin-right: 5%;
         align-self: center;
         display: grid;
-        grid-template-columns: 0.12fr 0.25fr 1fr 0.25fr 0.12fr;
-        grid-gap: 20px;
+        grid-template-columns: 0fr 0fr 1fr 0fr 0fr;
     }
     #dl-span img{
         width: 100%;
         cursor: pointer;
+        margin-bottom: 50px;
     }
     .instagram {
         border-radius: 5%;
