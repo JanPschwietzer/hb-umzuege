@@ -39,10 +39,12 @@
     main{
         visibility: hidden;
         height: 0px;
+        width: 0px;
     }
     #start1 {
         visibility: hidden;
         height: 0px;
+        width: 0px;
     }
     #start2 {
         width: 90vw;
