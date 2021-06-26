@@ -24,6 +24,9 @@
     .no-bg {
         background-color: rgba(0, 0, 0, 0.0);
     }
+    h1 {
+        font-size: 32px;
+    }
 
     /* HEADER */
 
@@ -39,10 +42,6 @@
         justify-self: start;
         height: 50%;
     }
-    header img:hover{
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-    }
     header nav{
         justify-self: end;
         display: grid;
@@ -56,13 +55,23 @@
     main{
         position: fixed;
         width: 99%;
-        min-height: 100%;
-        background-image: url("images/background_introtext.jpg");
+        height: 100%;
+        background-image: url("images/jmd-bg.jpg");
+        background-size: cover;
+        filter: hue-rotate(170deg);
     }
     main p{
-        width: 75%;
-        padding-bottom: 20px;
-        text-align: justify;
+        display:block;
+        position: fixed;
+        bottom: 100px;
+        left: 50%;
+        margin-left: -400px;
+        margin-top: 30vh;
+        width: 800px;
+        padding: 30px;
+        background-color: white;
+        text-align: center;
+        border-radius: 5px;
     }
     main ul{
         justify-self: start;
@@ -70,6 +79,26 @@
         font-size: 18px;
     }
 
+    #start {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        background-image: url("images/background_introtext.jpg");
+        background-size: contain;
+    }
+    #start1 {
+        width: 100%;
+        justify-self: start;
+    }
+    #start2 {
+        width: 100%;
+        text-align: justify;
+        justify-self: end;
+    }
+    #start-img {
+        width: 75%;
+    }
 
     /* ARTICLE DIENSTLEISTUNGEN */
 

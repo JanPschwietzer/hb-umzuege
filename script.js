@@ -33,7 +33,7 @@ function jQueryStuff(time) {
 
 //
 
-let i = 2;
+let i = 1;
 
 function bilderRight() {
     const bilder = ["images/bild1.jpg", "images/bild2.jpg", "images/bild3.jpg", "images/bild4.jpg", "images/bild5.jpg"];

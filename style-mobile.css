@@ -59,6 +59,19 @@
         margin-bottom: 50px;
         padding-left: 10px;
     }
+    #start1 {
+        visibility: hidden;
+        height: 0px;
+    }
+    #start2 {
+        width: 90vw;
+        padding: 10px 0px 50px 2.5px;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+        text-align: justify;
+        background-image: url("images/background_introtext_mobile.jpg");
+        background-size: cover;
+    }
 
 
     /* ARTICLE DIENSTLEISTUNGEN */
