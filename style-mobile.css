@@ -36,12 +36,14 @@
 
     /* MAIN */
 
-    main{
+    #home{
+        position: fixed;
         visibility: hidden;
         height: 0px;
         width: 0px;
     }
     #start1 {
+        position: fixed;
         visibility: hidden;
         height: 0px;
         width: 0px;
