@@ -37,27 +37,8 @@
     /* MAIN */
 
     main{
-        padding-left: 2.5%;
-        background-image: url("images/background_introtext_mobile.jpg");
-        background-repeat: no-repeat;
-        background-size: 95vw auto;
-        font-size: large;
-        width: 95vw;
-        padding-top: 10px;
-    }
-    main h1{
-        width: 90vw;
-    }
-    main p{
-        width: 90vw;
-        padding-bottom: 20px;
-        text-align: justify;
-    }
-    main ul{
-        width: 80vw;
-        font-size: large;
-        margin-bottom: 50px;
-        padding-left: 10px;
+        visibility: hidden;
+        height: 0px;
     }
     #start1 {
         visibility: hidden;
