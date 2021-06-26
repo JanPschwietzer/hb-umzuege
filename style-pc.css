@@ -218,6 +218,7 @@
     /* ARTICLE IMPRESSUM */
     #impressum{
         background-image: url("images/background_impressum.jpg");
+        background-repeat: no-repeat;
         background-size: 150%;
         color: black;
         padding: 20px 50px 20px 50px;
