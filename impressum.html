@@ -25,15 +25,13 @@
             <img src="svg/arrow-down.svg" alt="Klicken Sie hier um auf die Webseite zu gelangen." onclick="arrowClick()">    
         </main>
         <header id="header-nav">
-            <img src="images/logo.png" alt="HB-UMZUege Logo" id="#logo" onclick="unhide()">
+            <img src="images/logo.png" alt="HB-UMZUege Logo" class="logo" onclick="unhide()">
             <nav id="hidden-mobile">
                 <a href="index.html">Home</a>
-                <a href="index.html#dienstleistungen">Dienstleistungen</a>
-                <a href="index.html#kontakt">Kontakt</a>
                 <a href="#">Impressum</a>
             </nav>
         </header>
-        <article class="center" style="text-align: justify;">
+        <article class="center" style="text-align: justify; width: 90vw; padding: 2.5%; margin-top: 10px;">
             <h1>Impressum</h1>
             <p style="text-decoration: underline;">Angaben gem. § 5 TMG:</p>
             <p>Margarita Tihobaev</p>
@@ -74,6 +72,7 @@
                 <form action="https://formspree.io/f/meqpnvzl" method="POST" accept-charset="UTF-8" >
                     <input type="text" placeholder="Name" name="name">
                     <input type="email" placeholder="Email (Pflichtfeld)" name="email" required>
+                    <input type="text" placeholder="Telefon" name="telefon">
                     <textarea name="text" rows="5" placeholder="Nachricht (Pflichtfeld)" required></textarea>
                     <div id="checkbox">
                         <input type="checkbox" id="daten" required>
@@ -96,7 +95,7 @@
         </div>
         <footer>
             <h1>Wir planen Ihren Umzug:</h1>
-            <img src="images/logo.png" alt="HB-UMZUege Logo" id="#logo">
+            <img src="images/logo.png" alt="HB-UMZUege Logo" class="logo">
             <nav>
                 <a href="index.html">Home</a>
                 <a href="index.html#dienstleistungen">Dienstleistungen</a>

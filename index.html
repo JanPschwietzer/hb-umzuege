@@ -25,11 +25,9 @@
             <img src="svg/arrow-down.svg" alt="Klicken Sie hier um auf die Webseite zu gelangen." onclick="arrowClick()">    
         </main>
         <header id="header-nav">
-            <img src="images/logo.png" alt="HB-UMZUege Logo" id="#logo" onclick="unhide()">
+            <img src="images/logo.png" alt="HB-UMZUege Logo" class="logo" onclick="unhide()">
             <nav id="hidden-mobile">
                 <a href="#" onclick="arrowClick()">Home</a>
-                <a href="#dienstleistungen">Dienstleistungen</a>
-                <a href="#kontakt">Kontakt</a>
                 <a href="impressum.html">Impressum</a>
             </nav>
         </header>
@@ -100,6 +98,7 @@
                 <form action="https://formspree.io/f/meqpnvzl" method="POST" accept-charset="UTF-8" >
                     <input type="text" placeholder="Name" name="name">
                     <input type="email" placeholder="Email (Pflichtfeld)" name="email" required>
+                    <input type="text" placeholder="Telefon" name="telefon">
                     <textarea name="text" rows="5" placeholder="Nachricht (Pflichtfeld)" required></textarea>
                     <div id="checkbox">
                         <input type="checkbox" id="daten" required>
@@ -122,7 +121,7 @@
         </div>
         <footer>
             <h1>Wir planen Ihren Umzug:</h1>
-            <img src="images/logo.png" alt="HB-UMZUege Logo" id="#logo">
+            <img src="images/logo.png" alt="HB-UMZUege Logo" class="logo">
             <nav>
                 <a href="#header-nav">Home</a>
                 <a href="#dienstleistungen">Dienstleistungen</a>
