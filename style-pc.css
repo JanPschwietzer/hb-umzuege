@@ -237,6 +237,7 @@
 
     /* ARTICLE IMPRESSUM */
     #impressum{
+        margin-top: 130px;
         background-image: url("images/background_impressum.jpg");
         background-repeat: no-repeat;
         background-size: 150%;
