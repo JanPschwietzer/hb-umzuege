@@ -288,4 +288,7 @@
         justify-self: center;
         height: 33%;
     }
+    .imp {
+        text-align: justify;
+    }
 }

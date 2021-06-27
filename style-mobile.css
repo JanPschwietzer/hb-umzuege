@@ -22,22 +22,30 @@
         bottom: 0px;
         width: 95vw;
         background-color: lightgray;
+        margin-bottom: 0px;
     }
     header img{
         display: block;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
         max-height: 70px;
         max-width: 90vw;
         padding: 20px 0px 20px 0px;
     }
     #hidden-mobile {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 0px 0px 1fr;
         justify-items: center;
-        text-align: center;
+        align-items: center;
         font-size: larger;
-        height: 30px;
+        height: 40px;
         background-color: lightgray;
+    }
+    .mHidden {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
     }
 
 
@@ -48,6 +56,9 @@
         visibility: hidden;
         height: 0px;
         width: 0px;
+    }
+    #start {
+        padding-top: 30px;
     }
     #start1 {
         position: fixed;
@@ -227,11 +238,10 @@
         padding: 10px 0px 50px 0px;
     }
 
-
-    /* ARROW UP */
-
-    #arrow img{
-        width: 0px;
-        height: 0px;
+    .imp {
+        text-align: justify;
+        width: 90vw;
+        padding: 2.5%;
+        padding-top: 50px;
     }
 }
