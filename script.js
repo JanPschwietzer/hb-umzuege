@@ -1,37 +1,44 @@
-if (window.innerWidth > 800) {
-    let fadeout = "#home";
-
-    $(document).bind("scroll", function() {
-        window.scrollTo(0,0); 
-    });
-
-    $(document).ready(function() {
-        $("body").click(function() {
-            jQueryStuff(1000);
-        });
-        $("body").keydown(function() {
-            jQueryStuff(1000);
-        });
-        $(document).scroll(function() {
-            jQueryStuff(500);
-        });
-    })
-} else {
+if (window.innerWidth <= 1100) {
     $(document).ready(function() {
         $("#desktopOnly").css("visibility", "hidden");
         $("#desktopOnly").css("height", "5px");
+        $("#header-nav").css("position", "relative");
+        $("#header-nav").css("height", "100px");
+    });
+} else {
+    $(document).ready(function() {
+        $("#header-nav").css("position", "fixed");
+        $("#header-nav").css("top", "0px"); 
+        $("#header-nav").css("height", "100px");
     });
 }
 
-function jQueryStuff(time) {
-    $("main").fadeOut(time);
-    $(document).unbind("scroll");
-    $("img").fadeIn(500);
-    $(".opacity1").css("opacity", "0.2");
-    $(".opacity2").css("opacity", "0.5");
-}
+$(window).scroll(function() {
+    if (window.innerWidth > 1100) {
+        let height = $(window).scrollTop();
+        let main = $("main").height();
+    
+        console.log(height);
+        console.log(main);
+    
+        if (height >= main - 89) {
+            $("#header-nav").css("position", "absolute");
+            $("#header-nav").css("top", main - 90 + "px");
+        } else {
+            $("#header-nav").css("position", "fixed");
+            $("#header-nav").css("top", "0px"); 
+            $("#header-nav").css("height", "100px");
+        }
+    }
+});
 
-//
+function arrowClick() {
+    $(document).ready(function() {
+        $("html, body").animate({
+            scrollTop: $("main").get(0).scrollHeight - 90
+        }, 1000);
+    })
+}
 
 let i = 1;
 

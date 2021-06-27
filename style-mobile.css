@@ -17,15 +17,17 @@
     /* HEADER */
 
     header{
+        position: relative;
+        height: 100px;
+        bottom: 0px;
         width: 95vw;
         background-color: lightgray;
     }
     header img{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-        width: 90vw;
+        margin: auto;
+        max-height: 70px;
+        max-width: 90vw;
         padding: 20px 0px 20px 0px;
     }
     #hidden-mobile {

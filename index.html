@@ -15,29 +15,33 @@
         <link href="style-mobile.css" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Raleway:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
     </head>
     <body>
+        <main id="home">
+            <p class="text-mid">Ihr Partner für Umzüge in Bremen und umzu.</p>
+            <img src="svg/arrow-down.svg" alt="Klicken Sie hier um auf die Webseite zu gelangen." onclick="arrowClick()">    
+        </main>
         <header id="header-nav">
             <img src="images/logo.png" alt="HB-UMZUege Logo" id="#logo" onclick="unhide()">
             <nav id="hidden-mobile">
-                <a href="#home">Home</a>
+                <a href="#" onclick="arrowClick()">Home</a>
                 <a href="#dienstleistungen">Dienstleistungen</a>
                 <a href="#kontakt">Kontakt</a>
                 <a href="#impressum">Impressum</a>
             </nav>
         </header>
-        <main id="home">
-            <p class="text-mid">HB-UMZUege ist Ihr Partner für Umzüge in der Hansestadt Bremen und umzu! Klicken Sie gerne auf die Webseite oder scrollen Sie um mehr zu erfahren.</p>
-        </main>
         <article class="center" id="start">
             <div id="start1">
                 <img src="svg/logo.svg" id="start-img">
             </div>
             <div id="start2">
                 <h1>Wir planen Ihren Umzug.</h1>
-                <p>HB-UMZUege ist ein Familienunternehmen, welches seit 2015 die Maßstäbe der Umzugsunternehmen in der Hansestadt <strong>Bremen und auch umzu</strong> neu definiert. Wir achten sehr sorgfältig auf Kundenzufriedenheit und organisierte Abläufe! Es wartet auf Sie ein professionelles und agiles Team welches sich über Jahre aufeinander abgestimmt und eingespielt hat.</p>
-                <p>Mit uns ziehen Sie stressfrei um, denn wir organisieren Ihren Umzug von dem Transport der Möbel, der Entsorgung alter Möbel und natürlich auch der Durchführung des Umzuges bis zum Aufbau ihrer Möbel im neuen geliebten Heim. Sie werden noch nie so angenehm Ihren Lebensmittelpunkt verschoben haben. Wir sorgen immer für <strong>100 prozentige Stressfreiheit und Kundenzufriedenheit.</strong> Damit Sie sich im neuen Heim wohlfühlen. <i>Versprochen.</i></p>
-                <p id="extra-p">Haben Sie sich jetzt schon entschieden? Rufen Sie uns an unter <a href="tel:+4917655213138" style="text-decoration: underline">0176-55213138</a> oder nutzen Sie unser <a href="#kontakt" style="text-decoration: underline">Kontaktformular</a> auf dieser Webseite. Wir machen Ihnen innerhalb kürzester Zeit ein unverbindliches Angebot.</p>
+                <p>HB-UMZUege ist ein Familienunternehmen, welches seit 2015 Umzüge in der Hansestadt <strong>Bremen und auch umzu</strong> für hunderte Kunden durchgeführt hat. Dabei achten wir sehr sorgfältig auf Kundenzufriedenheit und organisierte Abläufe! Es wartet auf Sie ein professionelles und agiles Team welches sich über Jahre aufeinander abgestimmt und eingespielt hat.</p>
+                <p>Mit uns ziehen Sie stressfrei um, denn wir organisieren Ihren Umzug von A bis Z! Angefangen mit dem Transport der Möbel, der Entsorgung alter Möbel und natürlich auch der Durchführung des Umzuges bis zum Aufbau ihrer Möbel im neuen geliebten Heim. Sie werden noch nie so angenehm Ihren Lebensmittelpunkt verschoben haben. Wir sorgen immer für <strong>100 prozentige Stressfreiheit und Kundenzufriedenheit.</strong> Damit Sie sich im neuen Heim wohlfühlen. <i>Versprochen.</i></p>
+                <p>Haben Sie sich jetzt schon entschieden? Rufen Sie uns an unter <a href="tel:+4917655213138" style="text-decoration: underline">0176-55213138</a> oder nutzen Sie unser <a href="#kontakt" style="text-decoration: underline">Kontaktformular</a> auf dieser Webseite. Wir machen Ihnen innerhalb kürzester Zeit ein unverbindliches Angebot.</p>
             </div>
         </article>
         <article id="dienstleistungen" class="center">
@@ -47,7 +51,7 @@
                 <figure id="figure1" class="dl1">
                     <img src="svg/ort.png">
                     <figcaption>
-                        <p>Wir bieten ihnen Umzüge von Bremen und umzu nach ganz Deutschland. Für Familien, Einzelhaushalte, Senioren und auch Firmen.</p>
+                        <p>Egal wohin Sie ziehen wollen, wir führen Umzüge von Bremen und umzu nach ganz Deutschland durch. Für Familien, Einzelhaushalte, Senioren und auch Firmen.</p>
                     </figcaption>
                 </figure>
                 <figure id="figure2" class="dl1">
@@ -78,7 +82,7 @@
                 <figure id="figure5" class="dl2">
                     <img src="svg/transporter.png" alt="Ein beladener Transporter.">
                     <figcaption>
-                        <p>"Wie bekomme ich den Umzugswagen zu mir ?" Überlassen Sie die Frage uns, wir sorgen für Halteverbotszonen, so dass der Umzug ohne komplikationen verlaufen kann.</p>
+                        <p>Auch wenn es sonst keine Parkmöglichkeiten vor Ihrer Wohnung gibt. Wir sorgen für Halteverbotszonen, so dass der Umzug ohne komplikationen verlaufen kann.</p>
                     </figcaption>
                 </figure>
                 <figure id="figure6" class="dl2">
@@ -91,7 +95,8 @@
         </article>
         <div id="contact-impress" class="center">
             <article id="kontakt">
-                <h1>Kontaktieren Sie uns unverbindlich!</h1>
+                <h1>Kontaktieren Sie uns gerne!</h1>
+                <p>Wir machen Ihnen schnellstmöglich ein unverbindliches Angebot!</p>
                 <form action="https://formspree.io/f/meqpnvzl" method="POST" accept-charset="UTF-8" >
                     <input type="text" placeholder="Name" name="name">
                     <input type="email" placeholder="Email (Pflichtfeld)" name="email" required>
@@ -119,7 +124,7 @@
             <h1>Wir planen Ihren Umzug:</h1>
             <img src="images/logo.png" alt="HB-UMZUege Logo" id="#logo">
             <nav>
-                <a href="#home">Home</a>
+                <a href="#header-nav">Home</a>
                 <a href="#dienstleistungen">Dienstleistungen</a>
                 <a href="#kontakt">Kontakt</a>
                 <a href="#impressum">Impressum</a>
